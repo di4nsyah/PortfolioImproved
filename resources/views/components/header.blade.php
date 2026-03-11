@@ -1,20 +1,16 @@
 @props(['title'])
 
 <header class="site-header">
-    {{-- Logo --}}
     <a href="{{ route('biodata') }}" class="logo" style="text-decoration:none;">
         {{ $title }}
     </a>
 
-    {{-- Spacer --}}
     <div style="flex:1;"></div>
 
-    {{-- Current page indicator (desktop) --}}
     <span class="hidden md:block" style="font-size:0.75rem;color:var(--text-muted);letter-spacing:0.04em;">
         {{ ucfirst(request()->route()->getName() ?? 'portfolio') }}
     </span>
 
-    {{-- Mobile hamburger --}}
     <button
         class="hamburger"
         @click="sidebarOpen = !sidebarOpen"

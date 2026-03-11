@@ -6,7 +6,6 @@
     id="sidebar"
     aria-label="Main navigation"
 >
-    {{-- ── Profile ── --}}
     <div class="sidebar-profile">
         <img
             src="{{ $data['profile']['photo'] }}"

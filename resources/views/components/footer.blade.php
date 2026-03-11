@@ -7,5 +7,6 @@
     </span>
     <span style="letter-spacing:0.03em;">
         Built with Laravel &amp; Glassmorphism
+        By Di4nsyah
     </span>
 </footer>
