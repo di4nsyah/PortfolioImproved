@@ -2,9 +2,6 @@
 
 @section('content')
 
-{{-- ══════════════════════════════
-     HERO
-══════════════════════════════ --}}
 <div class="bio-hero fade-up fade-up-1">
     <img
         src="{{ $data['profile']['photo'] }}"
@@ -47,9 +44,6 @@
     @endif
 </div>
 
-{{-- ══════════════════════════════
-     ABOUT ME
-══════════════════════════════ --}}
 <section class="section fade-up fade-up-3">
     <p class="section-label">About Me</p>
     <h2 class="section-title">A little about myself</h2>
@@ -85,9 +79,6 @@
     </div>
 </section>
 
-{{-- ══════════════════════════════
-     SKILLS
-══════════════════════════════ --}}
 <section class="section fade-up fade-up-4">
     <p class="section-label">Skills</p>
     <h2 class="section-title">Technologies I work with</h2>
@@ -126,9 +117,6 @@
     </div>
 </section>
 
-{{-- ══════════════════════════════
-     STATS
-══════════════════════════════ --}}
 <section class="section fade-up fade-up-5">
     <p class="section-label">Numbers</p>
     <h2 class="section-title">By the numbers</h2>

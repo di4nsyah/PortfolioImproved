@@ -6,6 +6,7 @@
     id="sidebar"
     aria-label="Main navigation"
 >
+    {{-- ── Profile ── --}}
     <div class="sidebar-profile">
         <img
             src="{{ $data['profile']['photo'] }}"
@@ -18,7 +19,7 @@
 
     {{-- ── Navigation ── --}}
     <nav class="sidebar-nav" aria-label="Portfolio sections">
-        <a href="{{ route('biodata') }}"   class="{{ request()->routeIs('biodata')   ? 'active' : '' }}">
+        <a href="{{ route('biodata') }}" class="{{ request()->routeIs('biodata') ? 'active' : '' }}">
             <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
             </svg>
@@ -30,11 +31,19 @@
             </svg>
             Education
         </a>
-        <a href="{{ route('projects') }}"  class="{{ request()->routeIs('projects')  ? 'active' : '' }}">
+        <a href="{{ route('projects') }}" class="{{ request()->routeIs('projects') ? 'active' : '' }}">
             <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/>
+                <rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>
+                <rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/>
             </svg>
             Projects
+        </a>
+        <a href="{{ route('certificates') }}" class="{{ request()->routeIs('certificates') ? 'active' : '' }}">
+            <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="6"/>
+                <path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/>
+            </svg>
+            Certificates
         </a>
     </nav>
 

@@ -2,9 +2,6 @@
 
 @section('content')
 
-{{-- ══════════════════════════════
-     FEATURED PROJECTS
-══════════════════════════════ --}}
 <section class="section fade-up fade-up-1">
     <p class="section-label">Work</p>
     <h2 class="section-title">Featured Projects</h2>
@@ -84,9 +81,6 @@
     </div>
 </section>
 
-{{-- ══════════════════════════════
-     CONTACT
-══════════════════════════════ --}}
 <section class="section fade-up fade-up-2">
     <p class="section-label">Contact</p>
     <h2 class="section-title">Get in touch</h2>
@@ -135,9 +129,6 @@
     </div>
 </section>
 
-{{-- ══════════════════════════════
-     CTA
-══════════════════════════════ --}}
 <section class="fade-up fade-up-3" style="margin-bottom:2rem;">
     <div class="cta-block">
         <p class="section-label" style="justify-content:center;">Let's build together</p>

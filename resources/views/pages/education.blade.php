@@ -2,9 +2,6 @@
 
 @section('content')
 
-{{-- ══════════════════════════════
-     EDUCATION
-══════════════════════════════ --}}
 <section class="section fade-up fade-up-1">
     <p class="section-label">Education</p>
     <h2 class="section-title">Academic background</h2>
@@ -32,9 +29,6 @@
     </div>
 </section>
 
-{{-- ══════════════════════════════
-     EXPERIENCE TIMELINE
-══════════════════════════════ --}}
 <section class="section fade-up fade-up-2">
     <p class="section-label">Journey</p>
     <h2 class="section-title">My developer timeline</h2>
