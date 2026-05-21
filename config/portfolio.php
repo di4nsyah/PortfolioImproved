@@ -1,63 +1,27 @@
 <?php
 
 return [
-
-    /*
-    |══════════════════════════════════════════
-    | Site Settings
-    |══════════════════════════════════════════
-    */
     'site_title' => 'Portfolio.',
-
-    /*
-    |══════════════════════════════════════════
-    | Profile
-    | ↳ Ditampilkan di hero, sidebar, dan footer
-    |══════════════════════════════════════════
-    */
     'profile' => [
-        'name'         => 'Your Name',               // ← Ganti nama kamu
-        'role'         => 'Full Stack Developer',    // ← Ganti role / jabatan
-        'photo'        => '/images/profile.jpg',     // ← Taruh foto di public/images/
+        'name'         => 'Muhammad Diansyah Dwi Putra',  
+        'role'         => 'Full Stack Developer',    
+        'photo'        => '/images/profile.jpg',     
         'bio'          => 'Software developer focused on building clean, modern web applications.',
-        'location'     => 'Jakarta, Indonesia',      // ← Ganti kota
+        'location'     => 'Jakarta, Indonesia',      
         'availability' => 'Open to work',
         'experience'   => '2+ years learning',
         'skills'       => ['Laravel', 'PHP', 'Tailwind', 'MySQL', 'JavaScript'],
     ],
 
-    /*
-    |══════════════════════════════════════════
-    | About Me (Mini Story)
-    | ↳ Muncul di halaman Biodata — section "About Me"
-    |══════════════════════════════════════════
-    */
     'about' => [
-        // Cerita singkat tentang diri kamu (1-3 kalimat)
         'story' => 'I am a web developer focused on building modern, scalable web applications using Laravel and JavaScript. I enjoy designing clean UI and transforming ideas into functional products that actually solve problems.',
-
-        // Kapan mulai belajar coding
         'learning_since' => '2024',
-
-        // Bidang utama yang kamu kuasai
         'specialization' => 'Backend & Web Development',
-
-        // Tujuan karir kamu
         'career_goal' => 'Become a professional full stack developer',
-
-        // Apa yang sedang kamu kerjakan sekarang
         'currently_building' => 'Aviation Atlas — community aviation platform',
     ],
 
-    /*
-    |══════════════════════════════════════════
-    | Skills
-    | ↳ Muncul di halaman Biodata — section "Skills"
-    |══════════════════════════════════════════
-    */
     'skills' => [
-
-        // Kategori skill (tampil sebagai card dengan tag)
         'categories' => [
             [
                 'name'  => 'Frontend',
@@ -76,9 +40,7 @@ return [
                 'items' => ['Git', 'GitHub', 'VS Code', 'Postman'],
             ],
         ],
-
-        // Skill bars (tampil dengan progress bar animasi)
-        // Ganti angka 'pct' sesuai dengan kemampuan kamu (0-100)
+        
         'proficiency' => [
             ['name' => 'Laravel',    'pct' => 85],
             ['name' => 'PHP',        'pct' => 80],
@@ -88,12 +50,6 @@ return [
         ],
     ],
 
-    /*
-    |══════════════════════════════════════════
-    | Stats
-    | ↳ Muncul di halaman Biodata — section "By the numbers"
-    |══════════════════════════════════════════
-    */
     'stats' => [
         ['number' => '4',  'suffix' => '+', 'label' => 'Projects Built'],
         ['number' => '8',  'suffix' => '+', 'label' => 'Technologies Learned'],
@@ -101,35 +57,21 @@ return [
         ['number' => '2',  'suffix' => '',  'label' => 'Years Learning'],
     ],
 
-    /*
-    |══════════════════════════════════════════
-    | Education
-    | ↳ Muncul di halaman Education — section atas
-    |══════════════════════════════════════════
-    */
     'education' => [
         [
-            'title'       => 'SMKN 6 Jakarta',               // ← Ganti nama sekolah
+            'title'       => 'SMKN 6 Jakarta',               
             'description' => 'Software Development Major (RPL)',
-            'year'        => '2021 – 2024',                   // ← Ganti tahun
+            'year'        => '2024 – 2027',                   
             'note'        => 'Focused on web development, databases, and software engineering fundamentals.',
         ],
-        // Tambah entry pendidikan lain di sini jika ada
     ],
 
-    /*
-    |══════════════════════════════════════════
-    | Experience Timeline
-    | ↳ Muncul di halaman Education — section bawah
-    | ↳ Tidak harus pengalaman kerja — bisa milestone belajar
-    |══════════════════════════════════════════
-    */
     'experience_timeline' => [
         [
             'year'        => '2024',
             'title'       => 'Started learning Web Development',
             'description' => 'Began exploring HTML, CSS, and PHP fundamentals. Built my first static websites and simple dynamic pages.',
-            'highlight'   => '',  // ← Isi dengan milestone/pencapaian, atau kosongkan
+            'highlight'   => '',  
         ],
         [
             'year'        => '2025',
@@ -143,19 +85,12 @@ return [
             'description' => 'Working on a community aviation platform featuring an aircraft museum database with country and manufacturer filtering.',
             'highlight'   => 'Aviation Atlas — in active development',
         ],
-        // Tambah milestone berikutnya di sini
     ],
 
-    /*
-    |══════════════════════════════════════════
-    | Projects
-    | ↳ Muncul di halaman Projects — section atas
-    |══════════════════════════════════════════
-    */
     'projects' => [
         [
             'title'       => 'Aviation Atlas',
-            'image'       => '/images/projects/aviation-atlas.jpg',  // ← Taruh screenshot di public/images/projects/
+            'image'       => '/images/projects/aviation-atlas.jpg', 
             'description' => 'A community aviation platform with a comprehensive aircraft museum database. Users can browse by country, manufacturer, and aircraft type.',
             'tag'         => 'Community Platform',
             'stack'       => ['Laravel', 'MySQL', 'Tailwind CSS', 'Alpine.js'],
@@ -164,8 +99,8 @@ return [
                 'Filter by country and manufacturer',
                 'Aircraft manufacturer catalog',
             ],
-            'demo'        => '#',                                     // ← Ganti dengan URL demo
-            'github'      => 'https://github.com/username/aviation-atlas', // ← Ganti URL GitHub
+            'demo'        => '#',                                     
+            'github'      => 'https://github.com/username/aviation-atlas', 
         ],
         [
             'title'       => 'Library System',
@@ -209,52 +144,56 @@ return [
             'demo'        => '#',
             'github'      => 'https://github.com/username/temperature-converter',
         ],
+        [
+            'title'       => 'Skyport',
+            'image'       => '/images/projects/skyport.jpg',
+            'description' => 'A modern airport management system with real-time flight tracking and passenger services.',
+            'tag'         => 'Management System',
+            'stack'       => ['Laravel', 'PHP', 'Tailwind CSS'],
+            'features'    => [
+                'Flexible airport database',
+                'Search by location and services',
+                'Clean minimal UI',
+            ],
+            'demo'        => '#',
+            'github'      => 'https://github.com/username/skyport',
+        ],
+        [
+            'title'       => 'Weather Forecast App',
+            'image'       => '/images/projects/weather-forecast.jpg',
+            'description' => 'A modern weather forecasting application providing real-time updates and detailed predictions for various locations.',
+            'tag'         => 'Utility Tool',
+            'stack'       => ['Laravel', 'JavaScript', 'Tailwind CSS'],
+            'features'    => [
+                'Real-time weather updates',
+                'Detailed forecasts',
+                'Clean minimal UI',
+            ],
+            'demo'        => '#',
+            'github'      => 'https://github.com/username/weather-forecast',
+        ],
     ],
 
-    /*
-    |══════════════════════════════════════════
-    | Contact
-    | ↳ Muncul di halaman Projects — section Contact & CTA
-    |══════════════════════════════════════════
-    */
     'contact' => [
-        'email'            => 'your.email@example.com',           // ← Ganti email
-        'github'           => 'https://github.com/username',     // ← Ganti URL GitHub
+        'email'            => 'dnsxyh@gmail.com',        
+        'github'           => 'https://github.com/username',    
         'github_display'   => 'github.com/username',
-        'linkedin'         => 'https://linkedin.com/in/username', // ← Ganti URL LinkedIn (kosongkan jika tidak ada)
+        'linkedin'         => 'https://linkedin.com/in/username', 
         'linkedin_display' => 'linkedin.com/in/username',
-        'whatsapp'         => '',                                  // ← Isi nomor WA format: https://wa.me/62xxxxxxx
+        'whatsapp'         => '',                                  
         'whatsapp_display' => '',
     ],
 
-    /*
-    |══════════════════════════════════════════
-    | Certificates
-    | ↳ Muncul di halaman Certificates
-    |
-    | Field yang tersedia:
-    |   title          → nama lomba / event (wajib)
-    |   issuer         → nama penyelenggara
-    |   category       → label kategori (dipakai untuk filter tab)
-    |   year           → tahun (misal: '2025')
-    |   level          → tingkat (misal: 'Tingkat Kota', 'Nasional', dll)
-    |   place          → hasil ('1st', '2nd', '3rd', 'Participant', 'Finalist', 'Winner')
-    |   team           → nama tim / individu
-    |   image          → path screenshot sertifikat: '/images/certificates/nama.jpg'
-    |   description    → deskripsi singkat event (opsional)
-    |   credential_url → link verifikasi online (opsional, kosongkan jika tidak ada)
-    |══════════════════════════════════════════
-    */
     'certificates' => [
         [
-            'title'          => 'LKS Web Technologies',             // ← Ganti nama lomba
-            'issuer'         => 'Dinas Pendidikan DKI Jakarta',     // ← Ganti penyelenggara
+            'title'          => 'LKS Web Technologies',             
+            'issuer'         => 'Dinas Pendidikan DKI Jakarta',     
             'category'       => 'Web Development',
             'year'           => '2025',
             'level'          => 'Tingkat Kota',
-            'place'          => '2nd',                              // ← '1st' / '2nd' / '3rd' / 'Participant' / 'Winner' / 'Finalist'
+            'place'          => '2nd',                              
             'team'           => 'Individual',
-            'image'          => '/images/certificates/lks-web-2025.jpg', // ← Taruh foto di public/images/certificates/
+            'image'          => '/images/certificates/lks-web-2025.jpg', 
             'description'    => 'Competed in the Web Technologies category of LKS (Lomba Kompetensi Siswa) at the city level, building a full-stack web application within a timed competition.',
             'credential_url' => '',
         ],
@@ -282,26 +221,8 @@ return [
             'description'    => 'Participated in the competitive programming track at the annual IT Fair, solving algorithmic challenges across multiple rounds.',
             'credential_url' => '',
         ],
-        // ─── Tambah sertifikat berikutnya di sini ───────────────────────
-        // [
-        //     'title'          => 'Nama Lomba',
-        //     'issuer'         => 'Penyelenggara',
-        //     'category'       => 'Kategori',
-        //     'year'           => '2026',
-        //     'level'          => 'Tingkat ...',
-        //     'place'          => '1st',
-        //     'team'           => 'Individual',
-        //     'image'          => '/images/certificates/nama-file.jpg',
-        //     'description'    => 'Deskripsi singkat.',
-        //     'credential_url' => '',
-        // ],
     ],
 
-    /*
-    |══════════════════════════════════════════
-    | Social Links (sidebar)
-    |══════════════════════════════════════════
-    */
     'socials' => [
         'github'   => 'https://github.com/username',
         'linkedin' => '',
